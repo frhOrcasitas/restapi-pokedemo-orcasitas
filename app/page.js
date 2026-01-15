@@ -16,12 +16,11 @@ async function fetchPokemon(limit = 20) {
 }
 
 export default async function Page() {
-  const data = await fetchPokemon(30);
+  const data = await fetchPokemon(20);
 
   return (
     <>
-      <Navbar />
-      <main className="p-6 space-y-6">
+      <main className="p-6 bg-gray-100 space-y-6">
         <ClientWrapper data={data} />
       </main>
     </>

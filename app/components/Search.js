@@ -12,7 +12,7 @@ export default function Search({ onSearch }) {
         setValue(e.target.value);
         onSearch(e.target.value.toLowerCase());
       }}
-      className="border p-2 rounded w-full mb-4"
+      className="border p-2 rounded w-full mb-4 bg-gray-200 text-gray-800"
     />
   );
 }
